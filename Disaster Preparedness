@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+<title>Disaster Preparedness Survey</title>
+</head>
+
+<body>
+
+<h1>Disaster Preparedness Survey</h1>
+
+<form>
+
+    <h3>Household Information</h3>
+
+    <label>Address:</label><br>
+    <input type="text" name="address" required><br><br>
+
+    <label>Family Members:</label><br>
+    <input type="number" name="family_members" min="1" required>
+
+    <br><br>
+
+    <h3>Preparedness Check</h3>
+
+    <label>Emergency Kit:</label><br>
+    <input type="radio" name="emergency_kit" value="Yes" required> Yes<br>
+    <input type="radio" name="emergency_kit" value="No"> No<br><br>
+
+    <p><b>Note:</b> If "No" is selected, this household may need priority assistance.</p>
+
+    <label>Evacuation Plan:</label><br>
+    <input type="checkbox" name="evacuation" value="Assigned Center"> Assigned Center<br>
+    <input type="checkbox" name="evacuation" value="Family Meeting Point"> Family Meeting Point
+
+    <br><br>
+
+    <h3>Past Disaster Experience</h3>
+
+    <textarea name="experience" rows="4" cols="50" placeholder="Describe any past disaster experience..."></textarea>
+
+    <br><br>
+
+    <h3>Location Map</h3>
+
+    <p>Map Integration Placeholder (GIS Data)</p>
+
+    <br>
+
+    <input type="submit" value="Submit Survey">
+
+</form>
+
+<br>
+
+<h2>Printable Report (Manual Copy)</h2>
+<p>Barangay officials may print this page and review submitted responses.</p>
+
+</body>
+</html>
